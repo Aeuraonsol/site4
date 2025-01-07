@@ -53,16 +53,16 @@ function generateAIResponse(userInput) {
     // 打招呼场景
     if (lowerCaseInput.includes('hello') || lowerCaseInput.includes('hi')) {
         const greetings = [
-            "Hello! I'm Atlas, your intelligent digital assistant. How can I assist you today?",
-            "Hi there! Atlas at your service. What can I help you with?",
-            "Greetings! I'm Atlas, ready to help you explore the possibilities together!"
+            "Hello! I'm Ceryn, your intelligent digital assistant. How can I assist you today?",
+            "Hi there! Ceryn at your service. What can I help you with?",
+            "Greetings! I'm Ceryn, ready to help you explore the possibilities together!"
         ];
         return greetings[Math.floor(Math.random() * greetings.length)];
     }
 
     // 询问功能场景
     if (lowerCaseInput.includes('what can you do') || lowerCaseInput.includes('help me')) {
-        return "I'm Atlas, a versatile AI assistant. I can help you with:\n" +
+        return "I'm Ceryn, a versatile AI assistant. I can help you with:\n" +
                "📝 Answering questions\n" +
                "🔍 Information search\n" +
                "💡 Problem solving\n" +
@@ -97,7 +97,7 @@ function generateAIResponse(userInput) {
 
     // 关于Atlas
     if (lowerCaseInput.includes('who are you') || lowerCaseInput.includes('about you')) {
-        return "I'm Atlas, an advanced AI assistant designed to help you navigate the digital world. " +
+        return "I'm Ceryn, an advanced AI assistant designed to help you navigate the digital world. " +
                "I combine cutting-edge technology with user-friendly interaction to provide the best possible assistance. " +
                "What would you like to know about me?";
     }
@@ -141,7 +141,7 @@ document.addEventListener('DOMContentLoaded', function() {
     welcomeMessage.innerHTML = `
         <img src="2.png" alt="AI Avatar" class="avatar">
         <div class="message-content welcome-message">
-            <p>👋 Welcome! I'm Atlas, your intelligent digital companion.</p>
+            <p>👋 Welcome! I'm Ceryn, your intelligent digital companion.</p>
             <p class="feature-list">I'm here to assist you with:</p>
             <ul>
                 <li>📝 Information and answers</li>

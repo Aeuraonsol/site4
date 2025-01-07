@@ -83,14 +83,11 @@ body::before {
 }
 
 .logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: var(--primary-color);
-    position: relative;
+    display: flex;
+    align-items: center;
 }
 
-/* 给Logo添加渐变文字效果 */
-.logo {
+.logo span {
     background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
     -webkit-background-clip: text;
     background-clip: text;
@@ -128,7 +125,9 @@ body::before {
 }
 
 .hero-content {
-    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
 }
 
@@ -1237,4 +1236,14 @@ html {
         text-align: center;
         gap: 20px;
     }
-} 
+}
+
+/* 英雄区图片样式 */
+.hero-image {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+[Rest of the file remains exactly the same...] 
